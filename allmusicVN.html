@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On The Radio</title>
+    <!-- reset css -->
+    <link rel="stylesheet" href="resetcss.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!---------------- heder ----------------->
+    <div class="header set-index2">
+        <div class="top-bar">
+            <div class="top-bar__logo">
+                <div href="https://www.youtube.com/" class="top-bar__icon">Music Hub</div>
+            </div>
+            <div class="top-bar__ext-wave">
+            </div>
+            
+            <div class="top-bar__user">
+                
+                <div class="top-bar__ava"><img src="./assets/images/default-ava.jpg" alt=""></div>
+                <div class="top-bar__name">User Name<br> <span>User</span>  </div>
+            </div>
+        </div>
+        <div class="nav">
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="allmusic.html"><i class="fas fa-sort-down"></i> Music </a>
+                    <ul class="Music-menu">
+                        <li><a href="allmusicVN.html">Việt Nam</a></li>
+                        <li><a href="allmusicAU.html">Âu Mỹ</a></li>
+                        <li><a href="allmusicCA.html">Châu Á</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="top10.html"><i class="fas fa-sort-down"></i> Top 100</a>
+                    <ul class="top100-menu">
+                        <li><a href="top10VN.html">Việt Nam</a></li>
+                        <li><a href="top10AU.html">Âu Mỹ</a></li>
+                        <li><a href="top10CA.html">Châu Á</a></li>
+                    </ul>
+                </li>
+                <li><a style="padding:0;" href="search.html"><i style="transform:translateY(-14px);" class="fas fa-search"></i></a></i> <input class="nav__menu__search-box" placeholder="Name Song" type="text"></li>
+            </ul>
+        </div>
+    </div>
+    <!------------------ main content --------------->
+    <div class="main">
+        
+        <div class="main__container">
+            
+            <div class="playsong-box">
+                <div class="playsong-box__animation ">
+                   <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="playsong-box__main">
+                    <div class="playsong-box__songava">
+                        <img src="./assets/songs/song15.PNG" alt="">
+                        <div class="playsong-box__title">
+                            <div class="playsong-box__songname"> Như bài tình ca</div>
+                            <div class="playsong-box__singer"> Vinh Khuất</div>
+                        </div>
+                        
+                    </div>
+                    <div class="playsong-box__songplay">
+                            <span class="replay"><i class="fas fa-redo-alt"></i></span>
+                            <span class="previous"><i class="fas fa-step-backward"></i></span>
+                            <span class="play-pause">
+                                <i class="fas fa-play"></i>
+                                <i class="fas fa-pause"></i>
+                            </span>
+                            <span class="next"><i class="fas fa-step-forward"></i></span>
+                            <span class="random"><i class="fas fa-random"></i></span>
+                            <div class="progress-bar">
+                                <div class="progress">
+                                    
+                                </div>
+                            </div>
+                            <div class="timer">
+                                <div class="currentTime">0:00</div>
+                                <div class="durationTime">0:00</div>
+                            </div>
+                            <audio id="audio" src="./assets/songs/song15.mp3"></audio>
+                        <!-- <audio controls style="outline: none; width: 100%;">
+                        
+                            <source style="outline: none;" src="./assets/songs/song15.mp3" type="audio/mpeg"/>
+                        </audio> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__song-content">
+                
+                <div class="main__left">
+                    <div class="main__left-top">
+                        <h1>Việt Nam Music</h1>
+                    </div>
+                    <div class="main__left-mid">
+                        <!-- <div class="main__item">
+                            <img src="./assets/songs/song1.jfif" alt="">
+                            <div class="main__item-text"> Như bài tình ca</div>
+                        </div>  -->
+                        <!-- main songs here -->
+                    </div>
+                    
+                </div>
+                <div class="main__right">
+                    <div class="playlist-top10 ">
+                        <div class="playlist-top10__top">
+                            <h2>Top 5</h2>
+                            <a href="top10.html">view all</a>
+                        </div>
+                        <div class="playlist-top10__songs">
+                            <!-- songs top here -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!--------------- footer ----------------------->
+    <div class="footer">
+        <div class="songs-bar"></div>
+        <div class="footer__more-imformation">
+            <div class="top-bar__icon top-bar__icon--nowdown">Music Hub</div>
+            <div class="footer__follow-us">
+                Follow us
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                
+            </div>
+        </div> 
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
